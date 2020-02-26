@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.giar.Controller.AdminMenuController">
+   <children>
+      <SplitPane fx:id="splitPaneLeft" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: A2A2A2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane fx:id="anchorPaneLeft">
+               <children>
+                  <BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <AnchorPane fx:id="logoMenuPanel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane fx:id="homepageMenuPane" layoutX="56.0" layoutY="22.0" >
+                                 <children>
+                                    <AnchorPane>
+                                       <children>
+                                          <ImageView fitHeight="54.0" fitWidth="56.0" layoutX="88.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/logoy.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fx:id="homepageMenuPanel" fill="#ffff0d" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GIAR">
+                                             <font>
+                                                <Font name="System Bold" size="32.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <center>
+                        <AnchorPane prefHeight="518.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <JFXButton fx:id="statisticMenuPanel" focusTraversable="false" onAction="#openStatistics" prefHeight="50.0" prefWidth="250.0" text="Stats" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                              <JFXButton fx:id="newgameMenuPanel" focusTraversable="false" layoutY="50.0" onAction="#openInsertNewGame" prefHeight="50.0" prefWidth="250.0" text="Insert New Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                              <JFXButton fx:id="deleteUpdateMenuPanel" focusTraversable="false" layoutY="100.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#openDeleteUpdateGame" prefHeight="50.0" prefWidth="250.0" text="Delete/Update Game" textAlignment="JUSTIFY" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0" />
+                           </children>
+                        </AnchorPane>
+                     </center>
+                     <bottom>
+                        <AnchorPane prefHeight="64.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fx:id="logout" fitHeight="50.0" fitWidth="50.0" layoutX="100.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+                                 <image>
+                                    <Image url="@../images/LOGOUT%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </bottom>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="splitPaneRight" layoutX="250.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane fx:id="anchorPaneRight">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

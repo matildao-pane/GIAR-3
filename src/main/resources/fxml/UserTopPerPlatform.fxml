@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.giar.Controller.UserTopPerPlatformController">
+   <children>
+      <BorderPane layoutX="250.0" prefHeight="600.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+          <AnchorPane prefHeight="100.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="top" layoutX="41.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top" wrappingWidth="53.890625">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="plat" layoutX="95.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="354.890625">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+             <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTreeTableView fx:id="gamesTable3" layoutX="40.0" layoutY="21.0" prefHeight="465.0" prefWidth="600.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="21.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

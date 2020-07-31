@@ -1,7 +1,7 @@
 # GIAR
 [![CodeFactor](https://www.codefactor.io/repository/github/seraogianluca/GIAR/badge/master)](https://www.codefactor.io/repository/github/seraogianluca/GIAR/overview/master)
 
-# Advanced Data Mining And Machine Learning
+# Advanced Data Mining And Machine Learning (extension of GIAR)
 A service for the project of the Advanced Data Mining And Machine Learning course of the Artificial Intelligence and Data Engineering Master Degree at University of Pisa.
 
 
@@ -17,11 +17,12 @@ A service for the workgroup tasks of the Large-Scale and Multi-Structured Databa
 
 ## Task 2
 
-1) [Design](/docs/Design.md)
-2) [Implementation](/docs/Implementation.md)
-3) [Indexes Performance Study](/docs/IndexesStudy.md)
-4) [Tests](/docs/Test.md)
-5) [User Manual](/docs/UserManual.md)
+1) [Demo - User Manual](/docs/UserManual.md)
+2) [Design](/docs/Design.md)
+3) [Implementation](/docs/Implementation.md)
+4) [Indexes Performance Study](/docs/IndexesStudy.md)
+5) [Tests](/docs/Test.md)
+ 
 
 ## Task 3
 
